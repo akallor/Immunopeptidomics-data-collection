@@ -71,7 +71,7 @@ def get_pride_projects(query, max_pages=20):
 def save_to_json(data, json_file):
     with open(json_file, "w") as f:
         json.dump(data, f, indent=2)
-    print(f"✅ Saved filtered results to: {json_file}")
+    print(f"Saved filtered results to: {json_file}")
 
 def save_to_tsv(data, tsv_file):
     columns = ["accession", "title", "instrument", "diseases", "sample", "ftpLinks"]
@@ -87,7 +87,7 @@ def save_to_tsv(data, tsv_file):
                 ", ".join(proj.get("sample") or []),
                 ", ".join(proj.get("ftpLinks") or [])
             ])
-    print(f"✅ TSV file saved as: {tsv_file}")
+    print(f"TSV file saved as: {tsv_file}")
 
 if __name__ == "__main__":
     print("Querying PRIDE API and applying strict filters...")
