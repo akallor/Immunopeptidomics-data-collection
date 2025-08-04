@@ -90,9 +90,9 @@ def save_to_tsv(data, tsv_file):
     print(f"✅ TSV file saved as: {tsv_file}")
 
 if __name__ == "__main__":
-    print("🚀 Querying PRIDE API and applying strict filters...")
+    print("Querying PRIDE API and applying strict filters...")
     results = get_pride_projects(QUERY, max_pages=20)
-    print(f"✅ Retrieved {len(results)} STRICTLY matching datasets.")
+    print(f"Retrieved {len(results)} STRICTLY matching datasets.")
 
     # Save outputs
     save_to_json(results, OUTPUT_JSON)
