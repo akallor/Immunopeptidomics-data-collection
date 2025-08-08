@@ -5,7 +5,7 @@ BASE_URL="https://proteomecentral.proteomexchange.org/api/proxi/v0.1/datasets"
 OUTPUT_DIR="proteome_combined_results"
 mkdir -p "$OUTPUT_DIR"
 
-echo "=== ProteomeXchange Combined Search Strategy ==="
+echo "=== ProteomeXchange Combined Search Strategy"
 echo "Searching for all case variations and related terms..."
 echo ""
 
